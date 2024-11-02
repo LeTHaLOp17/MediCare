@@ -16,28 +16,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165"
-        app:srcCompat="@drawable/logodp1"
-        tools:ignore="ContentDescription,MissingConstraints" />
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/logodp_white" />
 
     <EditText
         android:id="@+id/phone"
         android:layout_width="338dp"
-        android:layout_height="58dp"
+        android:layout_height="57dp"
         android:alpha="0.7"
         android:background="@drawable/rounded_corner"
         android:drawableStart="@drawable/outline_account_circle_24"
         android:ems="10"
-        android:gravity="center"
         android:hint="@string/phone_name"
         android:inputType="phone"
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408"
+        app:layout_constraintVertical_bias="0.32"
         tools:ignore="Autofill,MissingConstraints" />
 
     <EditText
@@ -47,61 +45,61 @@
         android:alpha="0.7"
         android:background="@drawable/rounded_corner"
         android:drawableStart="@drawable/outline_lock_24"
+        android:drawableEnd="@drawable/outline_remove_eye_24"
         android:ems="10"
-        android:gravity="center"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone"
-        app:layout_constraintVertical_bias="0.101"
-        tools:ignore="Autofill,MissingConstraints"
-        android:drawableEnd="@drawable/outline_remove_eye_24"/>
+        app:layout_constraintVertical_bias="0.043"
+        tools:ignore="Autofill,MissingConstraints" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login"
-        android:layout_width="338dp"
-        android:layout_height="56dp"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
         android:alpha="0.9"
-        android:background="@drawable/bg_btn"
+        android:background="@drawable/bluebutton"
         android:text="@string/login_to_account"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass"
-        app:layout_constraintVertical_bias="0.239" />
+        app:layout_constraintVertical_bias="0.057" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signup"
-        android:layout_width="338dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
         android:alpha="0.7"
-        android:background="@drawable/bg_btn"
+        android:background="@drawable/bluebutton"
         android:text="@string/create_new_account"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintVertical_bias="0.781" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/forgot_password"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/signup"
-        app:layout_constraintVertical_bias="0.672"
-        android:textStyle="bold"/>
+        app:layout_constraintVertical_bias="0.42" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -109,10 +107,27 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:text="Skipp>>"
-        android:textSize="20sp"
+        android:textColor="#0E5C75"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:id="@+id/skipp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="140dp"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="@string/design_by_nayush_kumar_patel"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,4 +22,6 @@
     <string name="login_to_account">Login to account 😊</string>
     <string name="create_new_account">Create new account</string>
     <string name="forgot_password">Forgot password ?</string>
+    <string name="design_by_nayush_kumar_patel">Designed By \nAyush Kumar Patel</string>
+    <string name="see_all">SEE ALL</string>
 </resources>

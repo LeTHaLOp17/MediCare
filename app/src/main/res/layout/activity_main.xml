@@ -15,12 +15,13 @@
         android:layout_height="111dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="22dp"
-        android:layout_marginBottom="688dp"
         android:alpha="0.85"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099"
         app:srcCompat="@drawable/bac" />
 
     <ImageView
@@ -41,15 +42,16 @@
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="523dp"
-        android:layout_height="571dp"
+        android:layout_width="match_parent"
+        android:layout_height="501dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:alpha="0.92"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:layout_constraintVertical_bias="0.145"
         app:srcCompat="@drawable/medibac"
         tools:ignore="MissingConstraints" />
 
@@ -65,42 +67,61 @@
         android:layout_width="333dp"
         android:layout_height="621dp"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="50dp"
         android:alpha="0.94"
-        app:layout_constraintEnd_toEndOf="@+id/imageView15"
-        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281"
         app:srcCompat="@drawable/delivaryman1" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="361dp"
-        android:layout_height="259dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"
         android:background="@drawable/rounded_corner"
-        android:text="\n\n\n\n  \n\n          Your health, just a tap away.\n
-   Prescription medicines at your tip."
+        android:fontFamily="sans-serif"
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="Your health, just a tap away.\nPrescription medicines at your tip."
+        android:textColor="#4099B3"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="153dp"
-        android:layout_height="128dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="8dp"
+        android:layout_width="165dp"
+        android:layout_height="134dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/textView"
-        app:srcCompat="@drawable/logodp"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:layout_constraintVertical_bias="0.858"
+        app:srcCompat="@drawable/logodp_white"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="146dp"
+        android:layout_height="69dp"
+        android:gravity="center"
+        android:text="@string/design_by_nayush_kumar_patel"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

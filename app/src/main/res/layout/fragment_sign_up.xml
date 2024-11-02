@@ -14,9 +14,9 @@
         android:id="@+id/logo"
         android:layout_width="214dp"
         android:layout_height="156dp"
+        android:layout_marginBottom="20dp"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="55dp"
         android:contentDescription="@string/medicare"
         app:layout_constraintBottom_toTopOf="@+id/name"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,13 +24,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.621"
-        app:srcCompat="@drawable/logodp1" />
+        app:srcCompat="@drawable/logodp_white" />
 
     <EditText
         android:id="@+id/name"
         android:layout_width="338dp"
         android:layout_height="58dp"
-        android:layout_margin="20dp"
+        android:layout_gravity="center"
         android:alpha="0.7"
         android:background="@drawable/rounded_corner"
         android:drawableStart="@drawable/outline_account_circle_24"
@@ -39,12 +39,8 @@
         android:hint="@string/full_name"
         android:inputType="text"
         android:padding="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/phone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="Autofill,MissingConstraints"
-        android:layout_gravity="center" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/phone"
@@ -70,7 +66,6 @@
         android:id="@+id/email"
         android:layout_width="338dp"
         android:layout_height="58dp"
-        android:layout_margin="20dp"
         android:alpha="0.7"
         android:background="@drawable/rounded_corner"
         android:drawableStart="@drawable/outline_contact_mail_24"
@@ -82,9 +77,7 @@
         android:padding="12dp"
         app:layout_constraintBottom_toTopOf="@+id/pass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="Autofill" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/pass"
@@ -111,7 +104,6 @@
         android:id="@+id/repass"
         android:layout_width="338dp"
         android:layout_height="58dp"
-        android:layout_margin="20dp"
         android:alpha="0.7"
         android:background="@drawable/rounded_corner"
         android:drawableStart="@drawable/outline_lock_24"
@@ -127,6 +119,19 @@
         android:layout_gravity="center"
         android:drawableEnd="@drawable/outline_remove_eye_24" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createaccount"
+        android:layout_width="338dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.9"
+        android:background="@drawable/bluebutton"
+        android:text="@string/login_to_account"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -135,16 +140,30 @@
             android:id="@+id/signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
+            android:layout_marginTop="80dp"
             android:gravity="center"
             android:text="@string/sign_in"
+            android:textColor="#09526A"
             android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="147dp"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="@string/design_by_nayush_kumar_patel"
+            android:textColor="@color/white"
+            android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </LinearLayout>
