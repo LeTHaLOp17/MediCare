@@ -3,9 +3,9 @@ package com.example.medicare.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.medicare.databinding.AllMedicinesBinding
+import com.example.medicare.databinding.RegularMedicinesBinding
 
-class AllMedicines(
+class RegularMedicines(
     private val name: List<String>,
     private val company: List<String>,
     private val expiryDate: List<String>,
@@ -14,16 +14,14 @@ class AllMedicines(
     private val quantity: List<String>,
     private val price: List<String>,
     private val image: List<Int>
-) : RecyclerView.Adapter<AllMedicines.AllMedicinesViewHolder>() {
+) : RecyclerView.Adapter<RegularMedicines.RegularMedicinesViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AllMedicinesViewHolder {
-        // Correctly instantiate the binding
-        val binding = AllMedicinesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return AllMedicinesViewHolder(binding)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RegularMedicinesViewHolder {
+        val binding = RegularMedicinesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return RegularMedicinesViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: AllMedicinesViewHolder, position: Int) {
-        // Pass data for binding
+    override fun onBindViewHolder(holder: RegularMedicinesViewHolder, position: Int) {
         holder.bind(
             name = name[position],
             image = image[position],
@@ -40,7 +38,7 @@ class AllMedicines(
         return name.size
     }
 
-    class AllMedicinesViewHolder(private val binding: AllMedicinesBinding) : RecyclerView.ViewHolder(binding.root) {
+    class RegularMedicinesViewHolder(private val binding: RegularMedicinesBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(
             name: String,
             image: Int,

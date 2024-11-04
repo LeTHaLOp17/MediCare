@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
     android:elevation="15dp"
     android:alpha="0.9">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:alpha="0.9"
         android:elevation="15dp"
         app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -69,7 +73,8 @@
                 android:id="@+id/productquantity"
                 android:layout_width="94dp"
                 android:layout_height="39dp"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="4dp"
+                android:gravity="center"
                 android:padding="3dp"
                 android:text="strip of 10.0 tablets"
                 android:textSize="10sp"
@@ -107,12 +112,12 @@
                 android:layout_height="35dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/bluebutton"
+                android:background="@drawable/redbtn"
                 android:elevation="15dp"
                 android:fontFamily="@font/abril_fatface"
                 android:gravity="center"
                 android:text="Add"
-                android:textColor="#07F8C0"
+                android:textColor="@color/yellow"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
