@@ -22,7 +22,7 @@ class LoginFragment : AppCompatActivity() {
 
         signupBtn.setOnClickListener {
             // Create an Intent to start the SignUp activity
-            val intent = Intent(this@LoginFragment, SignUp::class.java)
+            val intent = Intent(this@LoginFragment, SignUpActivity::class.java)
             // Start the SignUp activity
             startActivity(intent)
             finish()
@@ -37,10 +37,9 @@ class LoginFragment : AppCompatActivity() {
         }
         skipBtn.setOnClickListener {
             // Create an Intent to start the SignUp activity
-            val intent = Intent(this@LoginFragment, HomePage::class.java)
+            val intent = Intent(this@LoginFragment, YourLocation::class.java)
             // Start the SignUp activity
             startActivity(intent)
-            finish()
         }
     }
 }

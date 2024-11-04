@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.types.checker.TypeRefinementSupport.Disabled.isEnabled
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
