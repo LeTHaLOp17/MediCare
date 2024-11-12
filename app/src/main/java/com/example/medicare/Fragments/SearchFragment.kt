@@ -41,7 +41,7 @@ class SearchFragment : Fragment() {
         allMedicines = listOf(
             MedicineItem("Saridon Advance Tablet for 5 person", "Bayer Pharmaceuticals Pvt Ltd", "Expires on or after: Jan 2026", "4", "50", "strip of 10 tablets", "32", R.drawable.saridonimg, MedicineType.REGULAR),
             MedicineItem("PCM", "Pfizer", "Expires on or after: Jan 2026", "2", "20", "strip of 8 tablets", "10", R.drawable.doc, MedicineType.REGULAR),
-            MedicineItem("Condom", "Cipla", "Expires on or after: Jan 2026", "3", "10", "box of 2", "5", R.drawable.dia, MedicineType.SPECIAL)
+            MedicineItem("Condom", "Cipla", "Expires on or after: Jan 2026", "3", "10", "box of 2", "5", R.drawable.dia, MedicineType.SPECIAL),
             // Add more items as needed
         )
 
